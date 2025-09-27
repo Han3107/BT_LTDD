@@ -14,13 +14,16 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         btnCreate = findViewById(R.id.btnCreate);
-
+        btnLogin = findViewById(R.id.btnLogin);
 
         btnCreate.setOnClickListener(v -> {
             Intent i = new Intent(WelcomeActivity.this, CreateAccountActivity.class);
             startActivity(i);
         });
 
-
+        btnLogin.setOnClickListener(v -> {
+            Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
+            startActivity(i);
+        });
     }
 }

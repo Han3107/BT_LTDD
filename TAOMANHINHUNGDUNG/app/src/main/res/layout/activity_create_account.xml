@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:background="@android:color/white">
-
+    android:background="#FFF0F5">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -12,16 +10,19 @@
 
         <TextView
             android:text="Tạo tài khoản mới"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="#D81B60"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
         <EditText
             android:id="@+id/edtName"
             android:hint="Họ và tên"
             android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
             android:layout_marginBottom="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -30,6 +31,8 @@
             android:id="@+id/edtEmail"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
             android:layout_marginBottom="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -38,14 +41,19 @@
             android:id="@+id/edtPassword"
             android:hint="Mật khẩu"
             android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
             android:layout_marginBottom="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
 
         <EditText
             android:id="@+id/edtConfirm"
             android:hint="Xác nhận mật khẩu"
             android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
             android:layout_marginBottom="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -53,17 +61,20 @@
         <CheckBox
             android:id="@+id/chkTerms"
             android:text="Tôi đồng ý với điều khoản dịch vụ"
-            android:layout_marginBottom="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="#880E4F"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/btnRegister"
             android:text="Tạo tài khoản"
-            android:backgroundTint="#2F80ED"
-            android:textColor="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="16dp"/>
 
     </LinearLayout>
 

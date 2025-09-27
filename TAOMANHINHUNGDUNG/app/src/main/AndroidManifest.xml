@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPayApp">
 
-        <!-- WelcomeActivity là màn hình khởi động -->
+
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
@@ -22,13 +22,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Màn hình tạo tài khoản -->
+
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />
-
-        <!-- Nếu không dùng MainActivity nữa thì xóa nó -->
-        <!-- <activity android:name=".MainActivity" android:exported="true" /> -->
-
+        <activity android:name=".LoginActivity" />
     </application>
 </manifest>
