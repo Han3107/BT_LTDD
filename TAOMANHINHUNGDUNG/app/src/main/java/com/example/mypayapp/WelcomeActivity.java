@@ -13,6 +13,14 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        btnCreate = findViewById(R.id.btnCreate);
+
+
+        btnCreate.setOnClickListener(v -> {
+            Intent i = new Intent(WelcomeActivity.this, CreateAccountActivity.class);
+            startActivity(i);
+        });
+
 
     }
 }
