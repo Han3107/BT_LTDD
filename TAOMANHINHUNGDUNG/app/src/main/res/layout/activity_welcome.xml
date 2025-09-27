@@ -7,6 +7,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:text="Chào mừng đến với MyPay"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:text="Thanh toán nhanh chóng, an toàn, tiện lợi"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Đăng nhập"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnCreate"
+        android:text="Tạo tài khoản"
+        android:backgroundTint="#2F80ED"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>
